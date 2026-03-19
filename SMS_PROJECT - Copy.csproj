@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB46B4C5-D345-4F6B-93C0-EF28F53303BD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMS_PROJECT</RootNamespace>
+    <AssemblyName>SMS_PROJECT</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="exammaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="exammaster.Designer.cs">
+      <DependentUpon>exammaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRESULT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRESULT.Designer.cs">
+      <DependentUpon>frmRESULT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmsemester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmsemester.Designer.cs">
+      <DependentUpon>Frmsemester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="marksfill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marksfill.Designer.cs">
+      <DependentUpon>marksfill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.cs">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RollNoCreation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RollNoCreation.Designer.cs">
+      <DependentUpon>RollNoCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmADMISSION_CANCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmADMISSION_CANCEL.Designer.cs">
+      <DependentUpon>frmADMISSION_CANCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCOURSE_FORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCOURSE_FORM.Designer.cs">
+      <DependentUpon>frmCOURSE_FORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDEPARTMENT_FORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDEPARTMENT_FORM.Designer.cs">
+      <DependentUpon>frmDEPARTMENT_FORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEXAM_SCHEDULE_FORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEXAM_SCHEDULE_FORM.Designer.cs">
+      <DependentUpon>frmEXAM_SCHEDULE_FORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFEE_FORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFEE_FORM.Designer.cs">
+      <DependentUpon>frmFEE_FORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLOGIN_FORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLOGIN_FORM.Designer.cs">
+      <DependentUpon>frmLOGIN_FORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSTUDENT_ADMISSION_FORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSTUDENT_ADMISSION_FORM.Designer.cs">
+      <DependentUpon>frmSTUDENT_ADMISSION_FORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSUBJECT_FORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSUBJECT_FORM.Designer.cs">
+      <DependentUpon>frmSUBJECT_FORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTEACHER_FORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTEACHER_FORM.Designer.cs">
+      <DependentUpon>frmTEACHER_FORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rptadmcancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptadmcancel.Designer.cs">
+      <DependentUpon>rptadmcancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptadmitedstudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptadmitedstudent.Designer.cs">
+      <DependentUpon>rptadmitedstudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptdeptinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptdeptinfo.Designer.cs">
+      <DependentUpon>rptdeptinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptexam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptexam.Designer.cs">
+      <DependentUpon>rptexam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptresult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptresult.Designer.cs">
+      <DependentUpon>rptresult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptStudentEnquert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptStudentEnquert.Designer.cs">
+      <DependentUpon>rptStudentEnquert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpt_fee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rpt_fee.Designer.cs">
+      <DependentUpon>rpt_fee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpt_roll_no.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rpt_roll_no.Designer.cs">
+      <DependentUpon>rpt_roll_no.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpt_subject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rpt_subject.Designer.cs">
+      <DependentUpon>rpt_subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpt_Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rpt_Teacher.Designer.cs">
+      <DependentUpon>rpt_Teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENT_REGISTRATION_FROM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STUDENT_REGISTRATION_FROM.Designer.cs">
+      <DependentUpon>STUDENT_REGISTRATION_FROM.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="exammaster.resx">
+      <DependentUpon>exammaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmADMISSION_CANCEL.resx">
+      <DependentUpon>frmADMISSION_CANCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCOURSE_FORM.resx">
+      <DependentUpon>frmCOURSE_FORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDEPARTMENT_FORM.resx">
+      <DependentUpon>frmDEPARTMENT_FORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEXAM_SCHEDULE_FORM.resx">
+      <DependentUpon>frmEXAM_SCHEDULE_FORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFEE_FORM.resx">
+      <DependentUpon>frmFEE_FORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLOGIN_FORM.resx">
+      <DependentUpon>frmLOGIN_FORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRESULT.resx">
+      <DependentUpon>frmRESULT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmsemester.resx">
+      <DependentUpon>Frmsemester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSTUDENT_ADMISSION_FORM.resx">
+      <DependentUpon>frmSTUDENT_ADMISSION_FORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSUBJECT_FORM.resx">
+      <DependentUpon>frmSUBJECT_FORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTEACHER_FORM.resx">
+      <DependentUpon>frmTEACHER_FORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marksfill.resx">
+      <DependentUpon>marksfill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RollNoCreation.resx">
+      <DependentUpon>RollNoCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptadmcancel.resx">
+      <DependentUpon>rptadmcancel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptadmitedstudent.resx">
+      <DependentUpon>rptadmitedstudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptdeptinfo.resx">
+      <DependentUpon>rptdeptinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptexam.resx">
+      <DependentUpon>rptexam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptresult.resx">
+      <DependentUpon>rptresult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptStudentEnquert.resx">
+      <DependentUpon>rptStudentEnquert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_fee.resx">
+      <DependentUpon>rpt_fee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_roll_no.resx">
+      <DependentUpon>rpt_roll_no.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_subject.resx">
+      <DependentUpon>rpt_subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Teacher.resx">
+      <DependentUpon>rpt_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STUDENT_REGISTRATION_FROM.resx">
+      <DependentUpon>STUDENT_REGISTRATION_FROM.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\smsmp college.jpg" />
+    <Content Include="Images\smsmp1.jpg" />
+    <None Include="Resources\architecture-independence-palace-ho-chi-minh-city.jpg" />
+    <None Include="Resources\architecture-independence-palace-ho-chi-minh-city %281%29.jpg" />
+    <None Include="Resources\49.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
